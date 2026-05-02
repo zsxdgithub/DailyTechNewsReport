@@ -2,6 +2,7 @@ import os
 import datetime
 import feedparser
 import json
+import re
 
 def load_sources(path='sources.json'):
     with open(path, encoding='utf-8') as f:
@@ -11,17 +12,25 @@ def fetch_news(feeds, limit=20):
     news_list = []
     for x in feeds:
         url = x['url']
-        d = feedparser.parse(url)
-        for entry in d.entries:
-            news_list.append({
-                "title": str(entry.title).strip(),
-                "summary": str(entry.get("summary", "") or "").strip(),
-                "link": entry.link
-            })
+        try:
+            d = feedparser.parse(url)
+            if d.bozo:
+                continue  # 跳过不能解析的源
+            for entry in d.entries:
+                # 清理 summary 字段中的 <img ...> 标签
+                summary = entry.get("summary", "")
+                summary_clean = re.sub(r'<img[^>]*>', '', summary, flags=re.I)
+                news_list.append({
+                    "title": str(entry.title).strip(),
+                    "summary": summary_clean.strip(),
+                    "link": entry.link
+                })
+                if len(news_list) >= limit:
+                    break
             if len(news_list) >= limit:
                 break
-        if len(news_list) >= limit:
-            break
+        except Exception as e:
+            print(f"Error fetching {url}: {e}")
     return news_list[:limit]
 
 def write_markdown(zh_news, en_news, path, date_str, chinese_sources, english_sources):
