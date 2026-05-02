@@ -1,1 +1,10 @@
+# 每日科技资讯汇总
 
+## 快捷入口  
+- [✏️ 编辑采集源（sources.json）](https://github.com/zsxdgithub/DailyTechNewsReport/edit/main/sources.json)
+- [🚀 立即采集（Actions页面）](https://github.com/zsxdgithub/DailyTechNewsReport/actions)
+
+## 日期归档
+
+- [YYYY-MM-DD](./YYYY-MM-DD.md)
+- [2026-05-02](./2026-05-02.md)
