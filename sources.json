@@ -1,26 +1,22 @@
 {
   "chinese": [
-    { "name": "36氪",      "url": "http://feed.36kr.com/news/latest" },
-    { "name": "虎嗅网",    "url": "https://www.huxiu.com/rss/0.xml" },
-    { "name": "极客公园",  "url": "https://www.geekpark.net/" },
-    { "name": "雷锋网",    "url": "https://www.leiphone.com/" },
-    { "name": "钛媒体",    "url": "https://www.tmtpost.com/" },
-    { "name": "品玩",      "url": "https://www.pingwest.com/" },
-    { "name": "新浪科技",  "url": "https://tech.sina.com.cn/" },
-    { "name": "IT之家",    "url": "https://www.ithome.com/" },
-    { "name": "少数派",    "url": "https://sspai.com/" },
-    { "name": "知乎科技专栏", "url": "https://www.zhihu.com/topic/19550972/hot" }
+    { "name": "36氪",        "url": "http://feed.36kr.com/news/latest" },
+    { "name": "虎嗅网",      "url": "https://www.huxiu.com/rss/0.xml" },
+    { "name": "新浪科技",    "url": "https://tech.sina.com.cn/rss/technews.xml" },
+    { "name": "IT之家",      "url": "https://www.ithome.com/rss/" },
+    { "name": "少数派",      "url": "https://sspai.com/feed" },
+    { "name": "环球网科技",  "url": "https://tech.huanqiu.com/feed" }
   ],
   "english": [
-    { "name": "TechCrunch",        "url": "http://feeds.feedburner.com/TechCrunch/" },
-    { "name": "The Verge",         "url": "https://www.theverge.com/rss/index.xml" },
-    { "name": "Wired",             "url": "https://www.wired.com/feed/rss" },
-    { "name": "Engadget",          "url": "https://www.engadget.com/rss.xml" },
-    { "name": "Ars Technica",      "url": "http://feeds.arstechnica.com/arstechnica/index" },
+    { "name": "TechCrunch",            "url": "http://feeds.feedburner.com/TechCrunch/" },
+    { "name": "The Verge",             "url": "https://www.theverge.com/rss/index.xml" },
+    { "name": "Wired",                 "url": "https://www.wired.com/feed/rss" },
+    { "name": "Engadget",              "url": "https://www.engadget.com/rss.xml" },
+    { "name": "Ars Technica",          "url": "http://feeds.arstechnica.com/arstechnica/index" },
     { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/" },
-    { "name": "VentureBeat",       "url": "https://venturebeat.com/feed/" },
-    { "name": "Mashable Tech",     "url": "https://mashable.com/feeds/rss/tech" },
-    { "name": "Gizmodo",           "url": "https://gizmodo.com/rss" },
-    { "name": "CNET Tech News",    "url": "https://www.cnet.com/rss/news/" }
+    { "name": "VentureBeat",           "url": "https://venturebeat.com/feed/" },
+    { "name": "Mashable Tech",         "url": "https://mashable.com/feeds/rss/tech" },
+    { "name": "Gizmodo",               "url": "https://gizmodo.com/rss" },
+    { "name": "CNET Tech News",        "url": "https://www.cnet.com/rss/news/" }
   ]
 }
