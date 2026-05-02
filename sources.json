@@ -1,11 +1,9 @@
 {
   "chinese": [
     { "name": "36氪", "url": "http://feed.36kr.com/news/latest" }
-    // 可继续添加中文源
   ],
   "english": [
     { "name": "TechCrunch", "url": "http://feeds.feedburner.com/TechCrunch/" },
     { "name": "The Verge", "url": "https://www.theverge.com/rss/index.xml" }
-    // 可继续添加英文源
   ]
 }
